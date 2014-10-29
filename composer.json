@@ -1,0 +1,19 @@
+{
+    "name": "markhuot/psychic",
+    "description": "A Doctrine / Laravel zero config bridge.",
+    "authors": [
+        {
+            "name": "Mark Huot",
+            "email": "mark@markhuot.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psychic": "src/"
+        }
+    }
+}
