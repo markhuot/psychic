@@ -92,7 +92,7 @@ class LaravelServiceProvider extends ServiceProvider {
 	 */
 	private function syncSchema()
 	{
-		$schema = new Schema($this->app->make('doctrine.conn'));
+		$schema = new Schema($this->app->make('psychic.conn'));
 		$schema->sync(\app_path('models'));
 	}
 	
