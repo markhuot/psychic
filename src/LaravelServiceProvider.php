@@ -1,4 +1,4 @@
-<?php namespace Exchanger;
+<?php namespace Psychic;
 
 use \Illuminate\Support\ServiceProvider;
 use \Doctrine\Common\Annotations\AnnotationRegistry;

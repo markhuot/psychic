@@ -1,4 +1,4 @@
-<?php namespace Exchanger;
+<?php namespace Psychic;
 
 use \ReflectionClass;
 use \Doctrine\DBAL\Connection;

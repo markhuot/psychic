@@ -1,4 +1,4 @@
-<?php namespace Exchanger;
+<?php namespace Psychic;
 
 /**
  * @link http://blog.riff.org/2014_02_16_reducing_redundancy_in_doctrine_annotations_loading

@@ -1,4 +1,4 @@
-<?php namespace Exchanger;
+<?php namespace Psychic;
 
 class Model {
 	
@@ -6,8 +6,8 @@ class Model {
 	{
 		return \App::make('doctrine.em')
 			->createQueryBuilder()
-			->select('c')
-			->from('Component', 'c')
+			->select('a')
+			->from(get_called_class(), 'a')
 			->getQuery()
 			->getResult();
 	}
