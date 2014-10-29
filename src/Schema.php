@@ -12,7 +12,7 @@ class Schema {
 	
 	/**
 	 * @param \Doctrine\DBAL\Connection $conn
-	 * @return \Exchanger\Schema
+	 * @return \Psychic\Schema
 	 */
 	public function __construct(Connection $conn)
 	{

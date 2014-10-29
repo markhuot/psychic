@@ -36,7 +36,7 @@ class LaravelServiceProvider extends ServiceProvider {
 		$this->bindConnection();
 		$this->bindEntityManager();
 		
-		if ($this->app['config']->get('exchanger.fluid')) {
+		if ($this->app['config']->get('psychic.fluid')) {
 			$this->syncSchema();
 		}
 	}
@@ -48,7 +48,7 @@ class LaravelServiceProvider extends ServiceProvider {
 	 */
 	private function bindConnection()
 	{
-		$this->app->singleton('doctrine.conn', function()
+		$this->app->singleton('psychic.conn', function()
 		{
 			$defaultConnection = $this->app['config']->get('database.default');
 			$connections = $this->app['config']->get('database.connections');
@@ -73,7 +73,7 @@ class LaravelServiceProvider extends ServiceProvider {
 	 */
 	private function bindEntityManager()
 	{
-		$this->app->singleton('doctrine.em', function()
+		$this->app->singleton('psychic.em', function()
 		{
 			$inDebugMode = $this->app->make('config')->get('debug');
 			$conn = $this->app->make('doctrine.conn');
