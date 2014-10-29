@@ -76,7 +76,7 @@ class LaravelServiceProvider extends ServiceProvider {
 		$this->app->singleton('psychic.em', function()
 		{
 			$inDebugMode = $this->app->make('config')->get('debug');
-			$conn = $this->app->make('doctrine.conn');
+			$conn = $this->app->make('psychic.conn');
 			$proxyDir = null;
 			$cache = null;
 			$useSimpleAnnotationReader = false;
